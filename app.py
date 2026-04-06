@@ -1,26 +1,59 @@
 import streamlit as st
 
-# 頁面基本設定
+# 1. 頁面基本設定
 st.set_page_config(page_title="建築構造探索筆記", layout="wide")
 
-# 自定義樣式：冷靜、乾淨的筆記質感
+# 2. 自定義樣式 (保持冷靜、乾淨的大學生筆記質感)
 st.markdown("""
     <style>
     .main-title { color: #2c3e50; font-size: 2.2rem; font-weight: 700; margin-bottom: 2rem; border-bottom: 2px solid #eee; padding-bottom: 10px; }
     .section-header { color: #34495e; font-size: 1.5rem; margin-top: 1.5rem; font-weight: 600; }
-    .story-text { background-color: #f9f9f9; padding: 20px; border-radius: 5px; border-left: 5px solid #bdc3c7; line-height: 1.6; }
-    .question-text { color: #d35400; font-weight: 600; font-size: 1.1rem; margin: 1.5rem 0; }
-    .logic-box { background-color: #ecf0f1; padding: 20px; border-radius: 5px; margin-top: 10px; }
-    .doubt-box { background-color: #fff5f5; padding: 15px; border-radius: 5px; border: 1px solid #feb2b2; margin-top: 10px; }
+    .story-text { background-color: #f8f9fa; padding: 25px; border-radius: 8px; border-left: 5px solid #4a5568; line-height: 1.7; color: #4a5568; }
+    .question-text { color: #c05621; font-weight: 600; font-size: 1.15rem; margin: 1.5rem 0; border-left: 3px solid #c05621; padding-left: 15px; }
+    .logic-box { background-color: #ebf4ff; padding: 20px; border-radius: 8px; margin-top: 10px; border: 1px solid #bee3f8; }
+    .doubt-box { background-color: #fffaf0; padding: 15px; border-radius: 8px; border: 1px solid #feebc8; margin-top: 10px; }
     </style>
     """, unsafe_allow_html=True)
 
 st.markdown('<div class="main-title">建築構造探索筆記：從美學直覺到理性求證</div>', unsafe_allow_html=True)
 
-# 側邊欄分類
-category = st.sidebar.selectbox("選擇建築類別", ["表演藝術與文化空間", "歷史與地景構造"])
+# 3. 側邊欄分類選擇
+category = st.sidebar.selectbox(
+    "選擇建築類別",
+    ["地標與超高層建築", "表演藝術與文化空間", "歷史與地景構造"]
+)
 
-if category == "表演藝術與文化空間":
+# --- 類別一：地標與超高層建築 ---
+if category == "地標與超高層建築":
+    tab1 = st.tabs(["台北 101"])
+
+    with tab1[0]:
+        st.markdown('<div class="section-header">台北 101：雲端的質量平衡遊戲</div>', unsafe_allow_html=True)
+        st.markdown('**【我的故事：從 Alex 的挑戰說起】**')
+        st.markdown(
+            '<div class="story-text">我對台北 101 的結構產生興趣，並非因為它是曾經的世界第一高樓，而是因為看了一段 Alex Honnold 攀登這座建築的影像。當我看到他懸掛在數百公尺的高空，手指扣住那些如竹節般的建築邊緣時，我意識到的不只是恐懼，而是這座建築在物理上的「不安定感」。在高空強勁的陣風中，這座細長的幾何體是如何維持穩定，而不讓頂端的攀爬者感受到致命的擺盪？</div>',
+            unsafe_allow_html=True)
+
+        st.markdown(
+            '<div class="question-text">❓ 設計提問：這座細長的幾幾何體，如何透過物理性的質量抵銷與幾何形狀設計，化解高空風力的強烈擾動？</div>',
+            unsafe_allow_html=True)
+
+        st.markdown('**【理性求證：雙重抗風機制】**')
+        st.markdown('<div class="logic-box">透過資料查閱，101 採用了「內外兼修」的抗震策略：<br><br>'
+                    '1. <b>動態平衡 (TMD)</b>：懸掛於高層的 660 公噸金屬巨球，利用物理慣性抵銷大樓晃動。<br>'
+                    '2. <b>幾何流體力學 (Saw-tooth Design)</b>：類似竹節的收縮設計與轉角鋸齒，能有效「打碎」高空氣流，防止形成規律的漩渦（渦流脫離 Vortex Shedding），從根本上降低了風力對大樓的推力。</div>',
+                    unsafe_allow_html=True)
+
+        st.markdown('**【保留疑問】**')
+        st.markdown(
+            '<div class="doubt-box">雖然幾何形狀能干擾氣流，但這種複雜的轉角設計，在長期承受高空風壓與日照熱漲冷縮的循環下，對玻璃帷幕與鋼構接頭的密合度是否有特殊的材料耐久性要求？</div>',
+            unsafe_allow_html=True)
+
+        st.write("---")
+        st.write("官方連結：[台北101官網 - 阻尼器介紹](https://www.taipei-101.com.tw/tw/observatory/damper)")
+
+# --- 類別二：表演藝術與文化空間 ---
+elif category == "表演藝術與文化空間":
     tab1, tab2, tab3 = st.tabs(["東京巨蛋", "台中歌劇院", "台北表演藝術中心"])
 
     with tab1:
@@ -42,7 +75,7 @@ if category == "表演藝術與文化空間":
             unsafe_allow_html=True)
         st.write("---")
         st.write(
-            "官方資料：[Tokyo Dome City 官網 - 關於巨蛋的秘密](https://www.tokyo-dome.co.jp/zh-CHT/tourists/dome/about/)")
+            "官方連結：[Tokyo Dome City 官網 - 關於巨蛋的秘密](https://www.tokyo-dome.co.jp/zh-CHT/tourists/dome/about/)")
 
     with tab2:
         st.markdown('<div class="section-header">台中國家歌劇院：流動的垂直曲面</div>', unsafe_allow_html=True)
@@ -68,7 +101,7 @@ if category == "表演藝術與文化空間":
         st.markdown('<div class="section-header">台北表演藝術中心：橫向生長的幾何</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事】**')
         st.markdown(
-            '<div class="story-text">這座建築在新聞上的爭議很大，但我更在意的是那種「突變感」。巨大的銀色圓球像是從方體中突然長出來一樣，重心極度偏向一側。這種違反直覺的生長方式，讓我懷疑它在地震頻繁的台灣是否真的站得住腳。</div>',
+            '<div class="story-text">身為嘉義人，這座建築在新聞上的討論度極高，但我更在意的是那種視覺上的「突變感」。巨大的銀色圓球像是從方體中突然長出來一樣。這種違反直覺的生長方式，讓我懷疑它在地震頻繁的台灣是否真的站得住腳。</div>',
             unsafe_allow_html=True)
         st.markdown(
             '<div class="question-text">❓ 設計提問：當巨型圓球從主建築橫向延伸，銜接處如何化解應力集中與扭轉破壞？</div>',
@@ -82,8 +115,9 @@ if category == "表演藝術與文化空間":
             '<div class="doubt-box">長期使用下，這種非對稱懸臂設計在銜接處的鋼材疲勞問題，是否會比一般對稱建築更難監測與維護？</div>',
             unsafe_allow_html=True)
         st.write("---")
-        st.write("官方資料：[台北表演藝術中心 - 空間特色](https://www.tpac-taipei.org/about/architecture)")
+        st.write("官方連結：[台北表演藝術中心 - 空間特色](https://www.tpac-taipei.org/about/architecture)")
 
+# --- 類別三：歷史與地景構造 ---
 elif category == "歷史與地景構造":
     tab1, tab2 = st.tabs(["龍騰斷橋", "故宮南院"])
 
@@ -91,7 +125,7 @@ elif category == "歷史與地景構造":
         st.markdown('<div class="section-header">龍騰斷橋：崎嶇地貌上的殘弧</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事】**')
         st.markdown(
-            '<div class="story-text">小時候去三義旅遊，看著長輩對這幾座磚柱興致勃勃，我卻覺得這裡的環境很荒謬。地面極度不平整，河谷深邃且兩岸不在同一個水平線上。這種地形一點都不適合蓋橋，當時的工程師難道看不出來嗎？</div>',
+            '<div class="story-text">小時候去三義旅遊，我發現這裡的環境非常荒謬。地面極度不平整，河谷深邃且兩岸不在同一個水平線上。這種地形一點都不適合蓋橋，要在這種地方用紅磚疊起一座能跑火車的橋，在結構上到底是怎麼平衡的？</div>',
             unsafe_allow_html=True)
         st.markdown(
             '<div class="question-text">❓ 設計提問：在崎嶇不平的地貌中，紅磚拱橋如何透過高度不等的橋墩，撐起一條水平的鐵路？</div>',
@@ -106,13 +140,13 @@ elif category == "歷史與地景構造":
             unsafe_allow_html=True)
         st.write("---")
         st.write(
-            "資料紀錄：[國家文化資產網 - 魚藤坪斷橋](https://nchdb.boch.gov.tw/assets/overview/historicalBuilding/20031125000004)")
+            "歷史紀錄：[國家文化資產網 - 魚藤坪斷橋](https://nchdb.boch.gov.tw/assets/overview/historicalBuilding/20031125000004)")
 
     with tab2:
         st.markdown('<div class="section-header">故宮南院至美橋：不對稱的力學偏移</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事】**')
         st.markdown(
-            '<div class="story-text">每次經過那片平原，總會看見這座弧度極大的景觀橋。它的視覺重心完全偏向一側，在那種流線型的曲面中，雖然漂亮，但總讓人覺得它比一般的橋還要「脆弱」一些。</div>',
+            '<div class="story-text">身為嘉義人，我對這座橋非常熟悉。它的視覺重心完全偏向一側，在那種流線型的曲面中，雖然漂亮，但總讓人覺得它比一般的橋還要「脆弱」一些。</div>',
             unsafe_allow_html=True)
         st.markdown(
             '<div class="question-text">❓ 設計提問：這座橋看似輕盈地橫跨水面，在物理層面上如何克服單側支撐帶來的巨大扭力？</div>',
@@ -126,4 +160,4 @@ elif category == "歷史與地景構造":
             '<div class="doubt-box">嘉義夏季常有強陣風，這種雙曲面的大受風面積，在設計上是如何透過模擬來計算其風致振動的安全性？</div>',
             unsafe_allow_html=True)
         st.write("---")
-        st.write("官方資料：[故宮南院 - 建築導覽](https://south.npm.gov.tw/Explore/Architecture)")
+        st.write("官方導覽：[故宮南院 - 建築美學](https://south.npm.gov.tw/Explore/Architecture)")
