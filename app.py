@@ -169,7 +169,7 @@ elif category == "表演藝術與文化空間":
         st.markdown('<div class="section-header">台中國家歌劇院：史前巨獸的內臟</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事】**')
         st.markdown(
-            '<div class="story-text">（雲端觀察）在網路上刷到內部的環景照，我瞬間起雞皮疙瘩。那空間長得太像某種生物的氣孔或內臟了，完全找不到正常的柱子可以靠著。我不禁想，伊東豊雄當初到底是怎麼算出這些彎來彎去的曲面該怎麼承重？</div>',
+            '<div class="story-text">在網路上刷到內部的環景照，我瞬間起雞皮疙瘩。那空間長得太像某種生物的氣孔或內臟了，完全找不到正常的柱子可以靠著。我不禁想，伊東豊雄當初到底是怎麼算出這些彎來彎去的曲面該怎麼承重？</div>',
             unsafe_allow_html=True)
         st.markdown(
             '<div class="question-text">❓ 設計提問：垂直延伸的沙漏狀曲面，究竟是裝飾性的外衣，還是取代樑柱結構的骨架？</div>',
