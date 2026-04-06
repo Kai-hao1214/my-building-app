@@ -115,13 +115,40 @@ elif category == "表演藝術與文化空間":
             '<div class="doubt-box">長期使用下，這種非對稱懸臂設計在銜接處的鋼材疲勞問題，是否會比一般對稱建築更難監測與維護？</div>',
             unsafe_allow_html=True)
         st.write("---")
-        st.write("官方連結：[台北表演藝術中心 - 空間特色](https://www.tpac-taipei.org/about/architecture)")
+        st.write("官方連結：[台北表演藝術中心 - 空間特色](https://www.tpac-taibei.org/about/architecture)")
 
 # --- 類別三：歷史與地景構造 ---
 elif category == "歷史與地景構造":
-    tab1, tab2 = st.tabs(["龍騰斷橋", "故宮南院"])
+    tab1, tab2, tab3 = st.tabs(["嘉義美術館", "龍騰斷橋", "故宮南院"])
 
     with tab1:
+        st.markdown('<div class="section-header">嘉義美術館：古蹟與 CLT 的時空交疊</div>', unsafe_allow_html=True)
+        st.markdown('**【我的故事】**')
+        st.markdown(
+            '<div class="story-text">身為嘉義人，我看過這棟建築翻修前的斑駁與沉寂，也見證了它翻修後的重生。最讓我欣賞的是，它並沒有為了迎合現代審美而抹去歷史，反而大程度地保留了日治時期煙酒公賣局那種厚實、沉穩的磚造與洗石子結構。那種新舊並置的視覺衝擊，成功地讓年輕一代願意走進古蹟。這不只是一次建築修復，更像是一場橫跨百年的對話。</div>',
+            unsafe_allow_html=True)
+
+        st.markdown(
+            '<div class="question-text">❓ 設計提問：如何在保留日治時期沉重磚造結構的同時，融入現代輕量化的補強設計，達成古今並置的空間美感？</div>',
+            unsafe_allow_html=True)
+
+        st.markdown('**【理性求證：新舊構造的融合與分離】**')
+        st.markdown('<div class="logic-box">'
+                    '這座建築的魅力來自於精準的補強與「新舊脫離」的策略：<br><br>'
+                    '1. <b>CLT (Cross Laminated Timber)</b>：增建區採用輕質高強度的多層次鋼性集成材外牆，減輕老舊地基負擔，並呼應嘉義「木都」歷史。<br>'
+                    '2. <b>三叉型集成材木柱</b>：在大廳內部支撐挑高屋頂，將垂直荷重與水平力有效分擔，創造大面積無柱視野。<br>'
+                    '3. <b>結構脫離設計</b>：古蹟棟與新大廳在力學上完全獨立，設有抗震縫避免受震時因晃動頻率不同而碰撞。</div>',
+                    unsafe_allow_html=True)
+
+        st.markdown('**【保留疑問】**')
+        st.markdown(
+            '<div class="doubt-box">在台灣潮濕多雨的環境下，木構造（CLT）與玻璃帷幕交接處的防水密封，以及長期的防腐維護，對古蹟保存單位而言是否會是極大的挑戰？</div>',
+            unsafe_allow_html=True)
+        st.write("---")
+        st.write(
+            "參考資料：[嘉義市立美術館官網 - 建築導覽](https://chiayiartmuseum.chiayi.gov.tw/Introduction/Architecture)")
+
+    with tab2:
         st.markdown('<div class="section-header">龍騰斷橋：崎嶇地貌上的殘弧</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事】**')
         st.markdown(
@@ -142,7 +169,7 @@ elif category == "歷史與地景構造":
         st.write(
             "歷史紀錄：[國家文化資產網 - 魚藤坪斷橋](https://nchdb.boch.gov.tw/assets/overview/historicalBuilding/20031125000004)")
 
-    with tab2:
+    with tab3:
         st.markdown('<div class="section-header">故宮南院至美橋：不對稱的力學偏移</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事】**')
         st.markdown(
