@@ -25,9 +25,9 @@ category = st.sidebar.selectbox(
 
 # --- 類別一：地標與超高層建築 ---
 if category == "地標與超高層建築":
-    tab1 = st.tabs(["台北 101"])
+    tab1, tab2 = st.tabs(["台北 101", "陶朱隱園"])
 
-    with tab1[0]:
+    with tab1:
         st.markdown('<div class="section-header">台北 101：雲端的質量平衡遊戲</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事：從 Alex 的挑戰說起】**')
         st.markdown(
@@ -35,22 +35,48 @@ if category == "地標與超高層建築":
             unsafe_allow_html=True)
 
         st.markdown(
-            '<div class="question-text">❓ 設計提問：這座細長的幾幾何體，如何透過物理性的質量抵銷與幾何形狀設計，化解高空風力的強烈擾動？</div>',
+            '<div class="question-text">❓ 設計提問：這座細長的幾何體，如何透過物理性的質量抵銷與幾何形狀設計，化解高空風力的強烈擾動？</div>',
             unsafe_allow_html=True)
 
         st.markdown('**【理性求證：雙重抗風機制】**')
-        st.markdown('<div class="logic-box">透過資料查閱，101 採用了「內外兼修」的抗震策略：<br><br>'
-                    '1. <b>動態平衡 (TMD)</b>：懸掛於高層的 660 公噸金屬巨球，利用物理慣性抵銷大樓晃動。<br>'
-                    '2. <b>幾何流體力學 (Saw-tooth Design)</b>：類似竹節的收縮設計與轉角鋸齒，能有效「打碎」高空氣流，防止形成規律的漩渦（渦流脫離 Vortex Shedding），從根本上降低了風力對大樓的推力。</div>',
+        st.markdown('<div class="logic-box">101 採用了「內外兼修」的抗震策略：<br><br>'
+                    '1. <b>動態平衡 TMD</b>：懸掛於高層的金屬巨球，利用物理慣性抵銷大樓晃動。<br>'
+                    '2. <b>幾何流體力學 Saw-tooth Design</b>：竹節收縮設計與轉角鋸齒，能有效打碎高空氣流，降低風力推力。</div>',
                     unsafe_allow_html=True)
 
         st.markdown('**【保留疑問】**')
         st.markdown(
-            '<div class="doubt-box">雖然幾何形狀能干擾氣流，但這種複雜的轉角設計，在長期承受高空風壓與日照熱漲冷縮的循環下，對玻璃帷幕與鋼構接頭的密合度是否有特殊的材料耐久性要求？</div>',
+            '<div class="doubt-box">雖然幾何形狀能干擾氣流，但這種複雜的轉角設計，在長期承受高空風壓下，對玻璃帷幕與鋼構接頭的密合度是否有特殊的材料耐久性要求？</div>',
             unsafe_allow_html=True)
 
         st.write("---")
         st.write("官方連結：[台北101官網 - 阻尼器介紹](https://www.taipei-101.com.tw/tw/observatory/damper)")
+
+    with tab2:
+        st.markdown('<div class="section-header">陶朱隱園：螺旋地標的結構代價</div>', unsafe_allow_html=True)
+        st.markdown('**【我的故事：網路上的旋轉奇觀】**')
+        st.markdown(
+            '<div class="story-text">雖然沒親自進去過，但從網路新聞與空拍影片中，很難不被這棟旋轉建築吸引。它最著名的標籤除了單戶高昂的售價，就是那如同 DNA 螺旋的獨特外型。看著那些層層堆疊、長滿綠色植栽的陽台，我不禁在想，這究竟是一場為了綠色建築美名的昂貴實驗，還是建築結構學上的一次極限挑戰？它是怎麼支撐起數千棵樹木與厚重土層重量的？</div>',
+            unsafe_allow_html=True)
+
+        st.markdown(
+            '<div class="question-text">❓ 設計提問：旋轉外觀創造了垂直綠化露台，但在物理層面上，這種不對稱的重力負荷如何不導致建築往單側傾斜？</div>',
+            unsafe_allow_html=True)
+
+        st.markdown('**【理性求證：滑雪人結構系統】**')
+        st.markdown('<div class="logic-box">陶朱隱園採用了罕見的 <b>Ski-lift System</b> 達成力學平衡：<br><br>'
+                    '1. <b>核心筒與巨型桁架</b>：建築中心是強大的 RC 核心筒，頂部 21 樓設有巨型鋼桁架，如同滑雪者的身體與雙肩。<br>'
+                    '2. <b>懸吊系統</b>：樓層重量透過兩側巨型鋼柱傳導至頂部桁架，再由核心筒吸收，如同滑雪桿支撐重心。<br>'
+                    '3. <b>隔震技術</b>：基座安裝 48 組全球最大型等級隔震墊，確保強震時建築能像在冰上滑動般抵銷能量。</div>',
+                    unsafe_allow_html=True)
+
+        st.markdown('**【保留疑問】**')
+        st.markdown(
+            '<div class="doubt-box">當數千棵樹木成年後，其根系對結構防水層的侵蝕，以及颱風天強風產生的風致振動對樹木穩定性的影響，長期維護成本是否會高到超乎想像？</div>',
+            unsafe_allow_html=True)
+
+        st.write("---")
+        st.write("官方連結：[陶朱隱園官網 - 結構與耐震設計](https://www.tao-zhu.com.tw/structure.html)")
 
 # --- 類別二：表演藝術與文化空間 ---
 elif category == "表演藝術與文化空間":
@@ -63,11 +89,11 @@ elif category == "表演藝術與文化空間":
             '<div class="story-text">身為運動迷，看經典賽時我的目光不只在投手丘上。巨蛋那片微透光的白色屋頂，大到不可思議卻看不見任何鋼樑支撐。那種極致的空曠，讓人在熱血之餘總有一絲不安：萬一這片輕飄飄的屋頂掉下來，底下的觀眾該怎麼辦？</div>',
             unsafe_allow_html=True)
         st.markdown(
-            '<div class="question-text">❓ 設計提問：這座球場是如何利用看不見的大氣壓差，將厚重的膜材「吹」成一座堅不可摧的建築？</div>',
+            '<div class="question-text">❓ 設計提問：這座球場是如何利用看不見的大氣壓差，將厚重的膜材吹成一座堅不可摧的建築？</div>',
             unsafe_allow_html=True)
         st.markdown('**【理性求證】**')
         st.markdown(
-            '<div class="logic-box">這屬於「空氣支撐結構」。室內氣壓始終維持在比室外高出 0.3% 的狀態，這微小的壓差產生了強大的向上浮力，讓屋頂像充飽氣的皮球一樣繃緊，足以對抗風雪。</div>',
+            '<div class="logic-box">這屬於空氣支撐結構。室內氣壓維持在比室外高出 0.3% 的狀態，微小的壓差產生強大向上浮力，讓屋頂像充飽氣的皮球一樣繃緊對抗風雪。</div>',
             unsafe_allow_html=True)
         st.markdown('**【保留疑問】**')
         st.markdown(
@@ -88,7 +114,7 @@ elif category == "表演藝術與文化空間":
             unsafe_allow_html=True)
         st.markdown('**【理性求證】**')
         st.markdown(
-            '<div class="logic-box">這並非裝飾，而是將牆與柱合一的「壺中居」結構。利用 3D 噴漿混擬土技術，讓牆面本身就具備承重路徑，重力順著曲面滑行到地下。</div>',
+            '<div class="logic-box">這並非裝飾，而是將牆與柱合一的壺中居結構。利用 3D 噴漿混擬土技術，讓牆面本身就具備承重路徑，重力順著曲面滑行到地下。</div>',
             unsafe_allow_html=True)
         st.markdown('**【保留疑問】**')
         st.markdown(
@@ -101,21 +127,21 @@ elif category == "表演藝術與文化空間":
         st.markdown('<div class="section-header">台北表演藝術中心：橫向生長的幾何</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事】**')
         st.markdown(
-            '<div class="story-text">身為嘉義人，這座建築在新聞上的討論度極高，但我更在意的是那種視覺上的「突變感」。巨大的銀色圓球像是從方體中突然長出來一樣。這種違反直覺的生長方式，讓我懷疑它在地震頻繁的台灣是否真的站得住腳。</div>',
+            '<div class="story-text">身為嘉義人，這座建築在新聞上的討論度極高，但我更在意的是那種視覺上的突變感。巨大的銀色圓球像是從方體中突然長出來一樣。這種違反直覺的生長方式，讓我懷疑它在地震頻繁的台灣是否真的站得住腳？</div>',
             unsafe_allow_html=True)
         st.markdown(
             '<div class="question-text">❓ 設計提問：當巨型圓球從主建築橫向延伸，銜接處如何化解應力集中與扭轉破壞？</div>',
             unsafe_allow_html=True)
         st.markdown('**【理性求證】**')
         st.markdown(
-            '<div class="logic-box">這屬於大跨度懸臂結構。球體重量透過內部的鋼構桁架「拉」回主體核心，並配置 S-SISO 抗震系統，讓球體與主體在受震時能有微小位移空間，緩衝撕裂力。</div>',
+            '<div class="logic-box">這屬於大跨度懸臂結構。球體重量透過內部的鋼構桁架拉回主體核心，並配置 S-SISO 抗震系統，讓球體與主體在受震時能有微小位移空間。</div>',
             unsafe_allow_html=True)
         st.markdown('**【保留疑問】**')
         st.markdown(
             '<div class="doubt-box">長期使用下，這種非對稱懸臂設計在銜接處的鋼材疲勞問題，是否會比一般對稱建築更難監測與維護？</div>',
             unsafe_allow_html=True)
         st.write("---")
-        st.write("官方連結：[台北表演藝術中心 - 空間特色](https://www.tpac-taibei.org/about/architecture)")
+        st.write("官方連結：[台北表演藝術中心 - 空間特色](https://www.tpac-taipei.org/about/architecture)")
 
 # --- 類別三：歷史與地景構造 ---
 elif category == "歷史與地景構造":
@@ -125,7 +151,7 @@ elif category == "歷史與地景構造":
         st.markdown('<div class="section-header">嘉義美術館：古蹟與 CLT 的時空交疊</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事】**')
         st.markdown(
-            '<div class="story-text">身為嘉義人，我看過這棟建築翻修前的斑駁與沉寂，也見證了它翻修後的重生。最讓我欣賞的是，它並沒有為了迎合現代審美而抹去歷史，反而大程度地保留了日治時期煙酒公賣局那種厚實、沉穩的磚造與洗石子結構。那種新舊並置的視覺衝擊，成功地讓年輕一代願意走進古蹟。這不只是一次建築修復，更像是一場橫跨百年的對話。</div>',
+            '<div class="story-text">身為嘉義人，我看過這棟建築翻修前的斑駁與沉寂，也見證了它翻修後的重生。最讓我欣賞的是，它並沒有為了迎合現代審美而抹去歷史，反而大程度地保留了日治時期煙酒公賣局那種厚實、沉穩的磚造與洗石子結構。那種新舊並置的視覺衝擊，成功地讓年輕一代願意走進古蹟。</div>',
             unsafe_allow_html=True)
 
         st.markdown(
@@ -134,15 +160,15 @@ elif category == "歷史與地景構造":
 
         st.markdown('**【理性求證：新舊構造的融合與分離】**')
         st.markdown('<div class="logic-box">'
-                    '這座建築的魅力來自於精準的補強與「新舊脫離」的策略：<br><br>'
-                    '1. <b>CLT (Cross Laminated Timber)</b>：增建區採用輕質高強度的多層次鋼性集成材外牆，減輕老舊地基負擔，並呼應嘉義「木都」歷史。<br>'
-                    '2. <b>三叉型集成材木柱</b>：在大廳內部支撐挑高屋頂，將垂直荷重與水平力有效分擔，創造大面積無柱視野。<br>'
+                    '這座建築的魅力來自於精準的補強與新舊脫離的策略：<br><br>'
+                    '1. <b>CLT 集成材</b>：增建區採用輕質高強度的多層次鋼性集成材外牆，減輕老舊地基負擔，並呼應木都歷史。<br>'
+                    '2. <b>三叉型集成材木柱</b>：在大廳內部支撐挑高屋頂，有效分擔垂直荷重與水平力，創造大面積無柱視野。<br>'
                     '3. <b>結構脫離設計</b>：古蹟棟與新大廳在力學上完全獨立，設有抗震縫避免受震時因晃動頻率不同而碰撞。</div>',
                     unsafe_allow_html=True)
 
         st.markdown('**【保留疑問】**')
         st.markdown(
-            '<div class="doubt-box">在台灣潮濕多雨的環境下，木構造（CLT）與玻璃帷幕交接處的防水密封，以及長期的防腐維護，對古蹟保存單位而言是否會是極大的挑戰？</div>',
+            '<div class="doubt-box">在台灣潮濕多雨環境下，木構造與玻璃帷幕交接處的防水密封，以及長期的防腐維護，對古蹟保存單位而言是否會是挑戰？</div>',
             unsafe_allow_html=True)
         st.write("---")
         st.write(
@@ -159,7 +185,7 @@ elif category == "歷史與地景構造":
             unsafe_allow_html=True)
         st.markdown('**【理性求證】**')
         st.markdown(
-            '<div class="logic-box">它是靠紅磚堆疊的「半圓拱」傳力。即便地基不平，工程師透過精確計算各橋墩的深度與高度，讓重力依舊能循著拱形軌跡消散。</div>',
+            '<div class="logic-box">它是靠紅磚堆疊的半圓拱傳力。即便地基不平，工程師透過精確計算各橋墩深度與高度，讓重力依舊能循著拱形軌跡消散。</div>',
             unsafe_allow_html=True)
         st.markdown('**【保留疑問】**')
         st.markdown(
@@ -173,7 +199,7 @@ elif category == "歷史與地景構造":
         st.markdown('<div class="section-header">故宮南院至美橋：不對稱的力學偏移</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事】**')
         st.markdown(
-            '<div class="story-text">身為嘉義人，我對這座橋非常熟悉。它的視覺重心完全偏向一側，在那種流線型的曲面中，雖然漂亮，但總讓人覺得它比一般的橋還要「脆弱」一些。</div>',
+            '<div class="story-text">身為嘉義人，我對這座橋非常熟悉。它的視覺重心完全偏向一側，在那種流線型的曲面中，雖然漂亮，但總讓人覺得它比一般的橋還要脆弱一些。</div>',
             unsafe_allow_html=True)
         st.markdown(
             '<div class="question-text">❓ 設計提問：這座橋看似輕盈地橫跨水面，在物理層面上如何克服單側支撐帶來的巨大扭力？</div>',
@@ -184,7 +210,7 @@ elif category == "歷史與地景構造":
             unsafe_allow_html=True)
         st.markdown('**【保留疑問】**')
         st.markdown(
-            '<div class="doubt-box">嘉義夏季常有強陣風，這種雙曲面的大受風面積，在設計上是如何透過模擬來計算其風致振動的安全性？</div>',
+            '<div class="doubt-box">嘉義夏季常有強陣風，這種雙曲面的大受風面積，在設計上是如何透過模擬來計算其風致振動安全性？</div>',
             unsafe_allow_html=True)
         st.write("---")
         st.write("官方導覽：[故宮南院 - 建築美學](https://south.npm.gov.tw/Explore/Architecture)")
