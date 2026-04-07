@@ -31,7 +31,7 @@ if category == "地標與超高層建築":
         st.markdown('<div class="section-header">台北 101：雲端的質量平衡遊戲</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事：從 Alex 的挑戰說起】**')
         st.markdown(
-            '<div class="story-text">我對台北 101 的結構產生興趣，並非因為它是曾經的世界第一高樓，而是因為看了一段 Alex Honnold 攀登這座建築的影像。當我看到他懸掛在數百公尺的高空，手指扣住那些如竹節般的建築邊緣時，我意識到的不只是恐懼，而是這座建築在物理上的「不安定感」。在高空強勁的陣風中，這座細長的幾何體是如何維持穩定，而不讓頂端的攀爬者感受到致命的擺盪？</div>',
+            '<div class="story-text">我對台北 101 的結構產生興趣，並非因為它是曾經的世界第一高樓，而是因為看了一段 Alex Honnold 攀登這座建築的影像。當我看到他懸掛在數百公尺的高空，手指扣住那些如竹節般的建築邊緣時，我意識到的不只是恐懼，而是這座建築時在物理上的「不安定感」。在高空強勁的陣風中，這座細長的幾何體是如何維持穩定，而不讓頂端的攀爬者感受到致命的擺盪？</div>',
             unsafe_allow_html=True)
 
         st.markdown(
@@ -76,7 +76,7 @@ if category == "地標與超高層建築":
             unsafe_allow_html=True)
 
         st.write("---")
-        st.write("官方連結：[陶朱隱園官網 - 結構與耐震設計](https://www.tao-zhu.com.tw/structure.html)")
+        st.write("官方連結：[陶朱隱園官網 - 建築核心](https://www.tao-zhu.com.tw/structure.html)")
 
 # --- 類別二：表演藝術與文化空間 ---
 elif category == "表演藝術與文化空間":
@@ -101,7 +101,7 @@ elif category == "表演藝術與文化空間":
             unsafe_allow_html=True)
         st.write("---")
         st.write(
-            "官方連結：[Tokyo Dome City 官網 - 關於巨蛋的秘密](https://www.tokyo-dome.co.jp/zh-CHT/tourists/dome/about/)")
+            "官方連結：[東京巨蛋官網 - 設施概要](https://www.tokyo-dome.co.jp/zh-CHT/tourists/dome/about/)")
 
     with tab2:
         st.markdown('<div class="section-header">台中國家歌劇院：流動的垂直曲面</div>', unsafe_allow_html=True)
@@ -121,7 +121,7 @@ elif category == "表演藝術與文化空間":
             '<div class="doubt-box">雖然知道是靠牆撐住，但面對地震時的水平剪力，這些複雜的弧形牆面是如何傳導應力而不產生裂縫的？</div>',
             unsafe_allow_html=True)
         st.write("---")
-        st.write("官方資料：[台中國家歌劇院官網 - 建築美學](https://www.npac-ntt.org/about/architecture)")
+        st.write("官方資料：[台中國家歌劇院 - 建築導覽](https://www.npac-ntt.org/about/architecture)")
 
     with tab3:
         st.markdown('<div class="section-header">台北表演藝術中心：橫向生長的幾何</div>', unsafe_allow_html=True)
@@ -141,7 +141,7 @@ elif category == "表演藝術與文化空間":
             '<div class="doubt-box">長期使用下，這種非對稱懸臂設計在銜接處的鋼材疲勞問題，是否會比一般對稱建築更難監測與維護？</div>',
             unsafe_allow_html=True)
         st.write("---")
-        st.write("官方連結：[台北表演藝術中心 - 空間特色](https://www.tpac-taipei.org/about/architecture)")
+        st.write("官方連結：[台北表演藝術中心 - 建築空間](https://www.tpac-taipei.org/architecture-space)")
 
 # --- 類別三：歷史與地景構造 ---
 elif category == "歷史與地景構造":
@@ -172,7 +172,7 @@ elif category == "歷史與地景構造":
             unsafe_allow_html=True)
         st.write("---")
         st.write(
-            "參考資料：[嘉義市立美術館官網 - 建築導覽](https://chiayiartmuseum.chiayi.gov.tw/Introduction/Architecture)")
+            "官方連結：[嘉義市立美術館 - 建築重生](https://chiayiartmuseum.chiayi.gov.tw/Introduction/Architecture)")
 
     with tab2:
         st.markdown('<div class="section-header">龍騰斷橋：崎嶇地貌上的殘弧</div>', unsafe_allow_html=True)
@@ -193,7 +193,7 @@ elif category == "歷史與地景構造":
             unsafe_allow_html=True)
         st.write("---")
         st.write(
-            "歷史紀錄：[國家文化資產網 - 魚藤坪斷橋](https://nchdb.boch.gov.tw/assets/overview/historicalBuilding/20031125000004)")
+            "歷史紀錄：[苗栗文化觀光局 - 魚藤坪斷橋](https://miaolitravel.net/Article.aspx?sNo=04004463)")
 
     with tab3:
         st.markdown('<div class="section-header">故宮南院至美橋：不對稱的力學偏移</div>', unsafe_allow_html=True)
@@ -213,4 +213,4 @@ elif category == "歷史與地景構造":
             '<div class="doubt-box">嘉義夏季常有強陣風，這種雙曲面的大受風面積，在設計上是如何透過模擬來計算其風致振動安全性？</div>',
             unsafe_allow_html=True)
         st.write("---")
-        st.write("官方導覽：[故宮南院 - 建築美學](https://south.npm.gov.tw/Explore/Architecture)")
+        st.write("官方連結：[故宮南院 - 景觀建築導覽](https://south.npm.gov.tw/Exhibition/Architecture)")
