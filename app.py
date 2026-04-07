@@ -50,7 +50,7 @@ if category == "地標與超高層建築":
             unsafe_allow_html=True)
 
         st.write("---")
-        st.write("官方連結：[台北101官網 - 阻尼器介紹](https://www.taipei-101.com.tw/tw/observatory/damper)")
+        st.write("官方連結：[台北101 - 阻尼器簡介](https://www.taipei-101.com.tw/tw/facility/damper)")
 
     with tab2:
         st.markdown('<div class="section-header">陶朱隱園：螺旋地標的結構代價</div>', unsafe_allow_html=True)
@@ -76,7 +76,7 @@ if category == "地標與超高層建築":
             unsafe_allow_html=True)
 
         st.write("---")
-        st.write("官方連結：[陶朱隱園官網 - 建築核心](https://www.tao-zhu.com.tw/structure.html)")
+        st.write("官方連結：[陶朱隱園 - 建築DNA](https://www.tao-zhu.com.tw/index.html)")
 
 # --- 類別二：表演藝術與文化空間 ---
 elif category == "表演藝術與文化空間":
@@ -101,7 +101,7 @@ elif category == "表演藝術與文化空間":
             unsafe_allow_html=True)
         st.write("---")
         st.write(
-            "官方連結：[東京巨蛋官網 - 設施概要](https://www.tokyo-dome.co.jp/zh-CHT/tourists/dome/about/)")
+            "官方連結：[東京巨蛋 - 設施導覽](https://www.tokyo-dome.co.jp/dome/about/)")
 
     with tab2:
         st.markdown('<div class="section-header">台中國家歌劇院：流動的垂直曲面</div>', unsafe_allow_html=True)
@@ -121,7 +121,7 @@ elif category == "表演藝術與文化空間":
             '<div class="doubt-box">雖然知道是靠牆撐住，但面對地震時的水平剪力，這些複雜的弧形牆面是如何傳導應力而不產生裂縫的？</div>',
             unsafe_allow_html=True)
         st.write("---")
-        st.write("官方資料：[台中國家歌劇院 - 建築導覽](https://www.npac-ntt.org/about/architecture)")
+        st.write("官方資料：[台中國家歌劇院 - 建築介紹](https://www.npac-ntt.org/about/architecture)")
 
     with tab3:
         st.markdown('<div class="section-header">台北表演藝術中心：橫向生長的幾何</div>', unsafe_allow_html=True)
@@ -141,7 +141,7 @@ elif category == "表演藝術與文化空間":
             '<div class="doubt-box">長期使用下，這種非對稱懸臂設計在銜接處的鋼材疲勞問題，是否會比一般對稱建築更難監測與維護？</div>',
             unsafe_allow_html=True)
         st.write("---")
-        st.write("官方連結：[台北表演藝術中心 - 建築空間](https://www.tpac-taipei.org/architecture-space)")
+        st.write("官方連結：[台北表演藝術中心 - 關於我們](https://www.tpac-taipei.org/architecture-space)")
 
 # --- 類別三：歷史與地景構造 ---
 elif category == "歷史與地景構造":
@@ -149,9 +149,9 @@ elif category == "歷史與地景構造":
 
     with tab1:
         st.markdown('<div class="section-header">嘉義美術館：古蹟與 CLT 的時空交疊</div>', unsafe_allow_html=True)
-        st.markdown('**【我的故事】**')
+        st.markdown('**【我的故事：身為嘉義人】**')
         st.markdown(
-            '<div class="story-text">身為嘉義人，我看過這棟建築翻修前的斑駁與沉寂，也見證了它翻修後的重生。最讓我欣賞的是，它並沒有為了迎合現代審美而抹去歷史，反而大程度地保留了日治時期煙酒公賣局那種厚實、沉穩的磚造與洗石子結構。那種新舊並置的視覺衝擊，成功地讓年輕一代願意走進古蹟。</div>',
+            '<div class="story-text">身為嘉義人，我看過這棟建築翻修前的斑駁與沉寂，也見證了它翻修後的重生。它大程度地保留了日治時期煙酒公賣局那種厚實、沉穩的磚造與洗石子結構。那種新舊並置的視覺衝擊，成功地讓年輕一代願意走進古蹟。</div>',
             unsafe_allow_html=True)
 
         st.markdown(
@@ -161,18 +161,18 @@ elif category == "歷史與地景構造":
         st.markdown('**【理性求證：新舊構造的融合與分離】**')
         st.markdown('<div class="logic-box">'
                     '這座建築的魅力來自於精準的補強與新舊脫離的策略：<br><br>'
-                    '1. <b>CLT 集成材</b>：增建區採用輕質高強度的多層次鋼性集成材外牆，減輕老舊地基負擔，並呼應木都歷史。<br>'
-                    '2. <b>三叉型集成材木柱</b>：在大廳內部支撐挑高屋頂，有效分擔垂直荷重與水平力，創造大面積無柱視野。<br>'
-                    '3. <b>結構脫離設計</b>：古蹟棟與新大廳在力學上完全獨立，設有抗震縫避免受震時因晃動頻率不同而碰撞。</div>',
+                    '1. <b>CLT 集成材</b>：增建區採用輕質高強度的多層次鋼性集成材外牆，減輕老舊地基負擔。<br>'
+                    '2. <b>三叉型集成材木柱</b>：在大廳內部支撐挑高屋頂，創造大面積無柱視野。<br>'
+                    '3. <b>結構脫離設計</b>：古蹟棟與新大廳在力學上完全獨立，設有抗震縫避免受震碰撞。</div>',
                     unsafe_allow_html=True)
 
         st.markdown('**【保留疑問】**')
         st.markdown(
-            '<div class="doubt-box">在台灣潮濕多雨環境下，木構造與玻璃帷幕交接處的防水密封，以及長期的防腐維護，對古蹟保存單位而言是否會是挑戰？</div>',
+            '<div class="doubt-box">在台灣潮濕多雨環境下，木構造與玻璃帷幕交接處的防水密封對古蹟保存而言是否會是挑戰？</div>',
             unsafe_allow_html=True)
         st.write("---")
         st.write(
-            "官方連結：[嘉義市立美術館 - 建築重生](https://chiayiartmuseum.chiayi.gov.tw/Introduction/Architecture)")
+            "官方連結：[嘉義市立美術館 - 建築導覽](https://chiayiartmuseum.chiayi.gov.tw/Introduction/Architecture)")
 
     with tab2:
         st.markdown('<div class="section-header">龍騰斷橋：崎嶇地貌上的殘弧</div>', unsafe_allow_html=True)
@@ -193,11 +193,11 @@ elif category == "歷史與地景構造":
             unsafe_allow_html=True)
         st.write("---")
         st.write(
-            "歷史紀錄：[苗栗文化觀光局 - 魚藤坪斷橋](https://miaolitravel.net/Article.aspx?sNo=04004463)")
+            "歷史紀錄：[苗栗文化觀光局 - 景點介紹](https://miaolitravel.net/Article.aspx?sNo=04004463)")
 
     with tab3:
         st.markdown('<div class="section-header">故宮南院至美橋：不對稱的力學偏移</div>', unsafe_allow_html=True)
-        st.markdown('**【我的故事】**')
+        st.markdown('**【我的故事：身為嘉義人】**')
         st.markdown(
             '<div class="story-text">身為嘉義人，我對這座橋非常熟悉。它的視覺重心完全偏向一側，在那種流線型的曲面中，雖然漂亮，但總讓人覺得它比一般的橋還要脆弱一些。</div>',
             unsafe_allow_html=True)
@@ -213,4 +213,4 @@ elif category == "歷史與地景構造":
             '<div class="doubt-box">嘉義夏季常有強陣風，這種雙曲面的大受風面積，在設計上是如何透過模擬來計算其風致振動安全性？</div>',
             unsafe_allow_html=True)
         st.write("---")
-        st.write("官方連結：[故宮南院 - 景觀建築導覽](https://south.npm.gov.tw/Exhibition/Architecture)")
+        st.write("官方連結：[故宮南院 - 園區景觀](https://south.npm.gov.tw/Exhibition/Architecture)")
