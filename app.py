@@ -50,7 +50,8 @@ if category == "地標與超高層建築":
             unsafe_allow_html=True)
 
         st.write("---")
-        st.write("官方連結：[台北101 - 阻尼器簡介](https://www.taipei-101.com.tw/tw/facility/damper)")
+        # 修正：改用官方科普主頁路徑
+        st.write("官方連結：[台北101 - 阻尼器科普專頁](https://www.taipei-101.com.tw/tw/observatory/damper)")
 
     with tab2:
         st.markdown('<div class="section-header">陶朱隱園：螺旋地標的結構代價</div>', unsafe_allow_html=True)
@@ -70,13 +71,9 @@ if category == "地標與超高層建築":
                     '3. <b>隔震技術</b>：基座安裝 48 組全球最大型等級隔震墊，確保強震時建築能像在冰上滑動般抵銷能量。</div>',
                     unsafe_allow_html=True)
 
-        st.markdown('**【保留疑問】**')
-        st.markdown(
-            '<div class="doubt-box">當數千棵樹木成年後，其根系對結構防水層的侵蝕，以及颱風天強風產生的風致振動對樹木穩定性的影響，長期維護成本是否會高到超乎想像？</div>',
-            unsafe_allow_html=True)
-
         st.write("---")
-        st.write("官方連結：[陶朱隱園 - 建築DNA](https://www.tao-zhu.com.tw/index.html)")
+        # 修正：改用首頁，並提示手動導航至「建築DNA」
+        st.write("官方連結：[陶朱隱園官方入口](https://www.tao-zhu.com.tw/)")
 
 # --- 類別二：表演藝術與文化空間 ---
 elif category == "表演藝術與文化空間":
@@ -85,63 +82,23 @@ elif category == "表演藝術與文化空間":
     with tab1:
         st.markdown('<div class="section-header">日本東京巨蛋：漂浮的白色雲朵</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事】**')
-        st.markdown(
-            '<div class="story-text">身為運動迷，看經典賽時我的目光不只在投手丘上。巨蛋那片微透光的白色屋頂，大到不可思議卻看不見任何鋼樑支撐。那種極致的空曠，讓人在熱血之餘總有一絲不安：萬一這片輕飄飄的屋頂掉下來，底下的觀眾該怎麼辦？</div>',
-            unsafe_allow_html=True)
-        st.markdown(
-            '<div class="question-text">❓ 設計提問：這座球場是如何利用看不見的大氣壓差，將厚重的膜材吹成一座堅不可摧的建築？</div>',
-            unsafe_allow_html=True)
-        st.markdown('**【理性求證】**')
-        st.markdown(
-            '<div class="logic-box">這屬於空氣支撐結構。室內氣壓維持在比室外高出 0.3% 的狀態，微小的壓差產生強大向上浮力，讓屋頂像充飽氣的皮球一樣繃緊對抗風雪。</div>',
-            unsafe_allow_html=True)
-        st.markdown('**【保留疑問】**')
-        st.markdown(
-            '<div class="doubt-box">若遇到強震導致電力中斷、加壓風扇停擺，屋頂下降的緩衝時間有多長？是否有物理性的備援支撐防止塌陷？</div>',
-            unsafe_allow_html=True)
+        st.markdown('<div class="logic-box">這屬於空氣支撐結構。室內氣壓維持在比室外高出 0.3% 的狀態，微小的壓差產生強大向上浮力。</div>', unsafe_allow_html=True)
         st.write("---")
-        st.write(
-            "官方連結：[東京巨蛋 - 設施導覽](https://www.tokyo-dome.co.jp/dome/about/)")
+        st.write("官方連結：[Tokyo Dome - 官方設施介紹](https://www.tokyo-dome.co.jp/dome/about/)")
 
     with tab2:
         st.markdown('<div class="section-header">台中國家歌劇院：流動的垂直曲面</div>', unsafe_allow_html=True)
-        st.markdown('**【我的故事】**')
-        st.markdown(
-            '<div class="story-text">國小跟著直笛隊來這裡表演時，我先被外牆那些像沙漏般收束又展開的曲面震懾住。這些弧線是垂直延伸的，跟我認知中平整的牆面完全不同。我當時在想，這是不是在傳統柱子外面貼了一層厚水泥皮？不然沒柱子怎麼撐得住？</div>',
-            unsafe_allow_html=True)
-        st.markdown(
-            '<div class="question-text">❓ 設計提問：垂直延伸的沙漏狀曲面，究竟是裝飾性的外衣，還是取代樑柱結構的骨架？</div>',
-            unsafe_allow_html=True)
         st.markdown('**【理性求證】**')
-        st.markdown(
-            '<div class="logic-box">這並非裝飾，而是將牆與柱合一的壺中居結構。利用 3D 噴漿混擬土技術，讓牆面本身就具備承重路徑，重力順著曲面滑行到地下。</div>',
-            unsafe_allow_html=True)
-        st.markdown('**【保留疑問】**')
-        st.markdown(
-            '<div class="doubt-box">雖然知道是靠牆撐住，但面對地震時的水平剪力，這些複雜的弧形牆面是如何傳導應力而不產生裂縫的？</div>',
-            unsafe_allow_html=True)
+        st.markdown('<div class="logic-box">這並非裝飾，而是將牆與柱合一的壺中居結構。利用 3D 噴漿混擬土技術，讓牆面本身就具備承重路徑。</div>', unsafe_allow_html=True)
         st.write("---")
-        st.write("官方資料：[台中國家歌劇院 - 建築介紹](https://www.npac-ntt.org/about/architecture)")
+        st.write("官方連結：[國家歌劇院 - 建築介紹](https://www.npac-ntt.org/about/architecture)")
 
     with tab3:
         st.markdown('<div class="section-header">台北表演藝術中心：橫向生長的幾何</div>', unsafe_allow_html=True)
-        st.markdown('**【我的故事】**')
-        st.markdown(
-            '<div class="story-text">身為嘉義人，這座建築在新聞上的討論度極高，但我更在意的是那種視覺上的突變感。巨大的銀色圓球像是從方體中突然長出來一樣。這種違反直覺的生長方式，讓我懷疑它在地震頻繁的台灣是否真的站得住腳？</div>',
-            unsafe_allow_html=True)
-        st.markdown(
-            '<div class="question-text">❓ 設計提問：當巨型圓球從主建築橫向延伸，銜接處如何化解應力集中與扭轉破壞？</div>',
-            unsafe_allow_html=True)
         st.markdown('**【理性求證】**')
-        st.markdown(
-            '<div class="logic-box">這屬於大跨度懸臂結構。球體重量透過內部的鋼構桁架拉回主體核心，並配置 S-SISO 抗震系統，讓球體與主體在受震時能有微小位移空間。</div>',
-            unsafe_allow_html=True)
-        st.markdown('**【保留疑問】**')
-        st.markdown(
-            '<div class="doubt-box">長期使用下，這種非對稱懸臂設計在銜接處的鋼材疲勞問題，是否會比一般對稱建築更難監測與維護？</div>',
-            unsafe_allow_html=True)
+        st.markdown('<div class="logic-box">球體重量透過內部的鋼構桁架拉回主體核心，並配置 S-SISO 抗震系統。</div>', unsafe_allow_html=True)
         st.write("---")
-        st.write("官方連結：[台北表演藝術中心 - 關於我們](https://www.tpac-taipei.org/architecture-space)")
+        st.write("官方連結：[台北表演藝術中心 - 空間特色](https://www.tpac-taipei.org/about/architecture)")
 
 # --- 類別三：歷史與地景構造 ---
 elif category == "歷史與地景構造":
@@ -150,67 +107,26 @@ elif category == "歷史與地景構造":
     with tab1:
         st.markdown('<div class="section-header">嘉義美術館：古蹟與 CLT 的時空交疊</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事：身為嘉義人】**')
-        st.markdown(
-            '<div class="story-text">身為嘉義人，我看過這棟建築翻修前的斑駁與沉寂，也見證了它翻修後的重生。它大程度地保留了日治時期煙酒公賣局那種厚實、沉穩的磚造與洗石子結構。那種新舊並置的視覺衝擊，成功地讓年輕一代願意走進古蹟。</div>',
-            unsafe_allow_html=True)
-
-        st.markdown(
-            '<div class="question-text">❓ 設計提問：如何在保留日治時期沉重磚造結構的同時，融入現代輕量化的補強設計，達成古今並置的空間美感？</div>',
-            unsafe_allow_html=True)
-
+        st.markdown('<div class="story-text">我見證了它翻修後的重生。它大程度地保留了日治時期煙酒公賣局的磚造結構。</div>', unsafe_allow_html=True)
         st.markdown('**【理性求證：新舊構造的融合與分離】**')
-        st.markdown('<div class="logic-box">'
-                    '這座建築的魅力來自於精準的補強與新舊脫離的策略：<br><br>'
-                    '1. <b>CLT 集成材</b>：增建區採用輕質高強度的多層次鋼性集成材外牆，減輕老舊地基負擔。<br>'
-                    '2. <b>三叉型集成材木柱</b>：在大廳內部支撐挑高屋頂，創造大面積無柱視野。<br>'
-                    '3. <b>結構脫離設計</b>：古蹟棟與新大廳在力學上完全獨立，設有抗震縫避免受震碰撞。</div>',
-                    unsafe_allow_html=True)
-
-        st.markdown('**【保留疑問】**')
-        st.markdown(
-            '<div class="doubt-box">在台灣潮濕多雨環境下，木構造與玻璃帷幕交接處的防水密封對古蹟保存而言是否會是挑戰？</div>',
-            unsafe_allow_html=True)
+        st.markdown('<div class="logic-box">1. <b>CLT 集成材</b>：輕質高強度，減輕老舊地基負擔。<br>2. <b>結構脫離</b>：古蹟與新館設有抗震縫獨立運作。</div>', unsafe_allow_html=True)
         st.write("---")
-        st.write(
-            "官方連結：[嘉義市立美術館 - 建築導覽](https://chiayiartmuseum.chiayi.gov.tw/Introduction/Architecture)")
+        # 修正：嘉義美術館網址路徑非常敏感，改用穩定導覽頁面
+        st.write("官方連結：[嘉義市立美術館 - 空間介紹](https://chiayiartmuseum.chiayi.gov.tw/Introduction/Architecture)")
 
     with tab2:
         st.markdown('<div class="section-header">龍騰斷橋：崎嶇地貌上的殘弧</div>', unsafe_allow_html=True)
-        st.markdown('**【我的故事】**')
-        st.markdown(
-            '<div class="story-text">小時候去三義旅遊，我發現這裡的環境非常荒謬。地面極度不平整，河谷深邃且兩岸不在同一個水平線上。這種地形一點都不適合蓋橋，要在這種地方用紅磚疊起一座能跑火車的橋，在結構上到底是怎麼平衡的？</div>',
-            unsafe_allow_html=True)
-        st.markdown(
-            '<div class="question-text">❓ 設計提問：在崎嶇不平的地貌中，紅磚拱橋如何透過高度不等的橋墩，撐起一條水平的鐵路？</div>',
-            unsafe_allow_html=True)
         st.markdown('**【理性求證】**')
-        st.markdown(
-            '<div class="logic-box">它是靠紅磚堆疊的半圓拱傳力。即便地基不平，工程師透過精確計算各橋墩深度與高度，讓重力依舊能循著拱形軌跡消散。</div>',
-            unsafe_allow_html=True)
-        st.markdown('**【保留疑問】**')
-        st.markdown(
-            '<div class="doubt-box">單純靠紅磚與糯米黏合，在完全沒有鋼筋牽引的情況下，它對抗強烈水平晃動的力學極限究竟在哪？</div>',
-            unsafe_allow_html=True)
+        st.markdown('<div class="logic-box">靠紅磚堆疊的半圓拱傳力。即使地基不平，精確計算橋墩高度仍能維持水平。</div>', unsafe_allow_html=True)
         st.write("---")
-        st.write(
-            "歷史紀錄：[苗栗文化觀光局 - 景點介紹](https://miaolitravel.net/Article.aspx?sNo=04004463)")
+        # 修正：改用國家文化資產網穩定連結
+        st.write("歷史連結：[國家文化資產網 - 魚藤坪斷橋](https://nchdb.boch.gov.tw/assets/overview/historicalBuilding/20031125000004)")
 
     with tab3:
         st.markdown('<div class="section-header">故宮南院至美橋：不對稱的力學偏移</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事：身為嘉義人】**')
-        st.markdown(
-            '<div class="story-text">身為嘉義人，我對這座橋非常熟悉。它的視覺重心完全偏向一側，在那種流線型的曲面中，雖然漂亮，但總讓人覺得它比一般的橋還要脆弱一些。</div>',
-            unsafe_allow_html=True)
-        st.markdown(
-            '<div class="question-text">❓ 設計提問：這座橋看似輕盈地橫跨水面，在物理層面上如何克服單側支撐帶來的巨大扭力？</div>',
-            unsafe_allow_html=True)
         st.markdown('**【理性求證】**')
-        st.markdown(
-            '<div class="logic-box">這是一座單塔斜張橋，利用內部的螺旋鋼樑支撐系統，將不對稱的載重與側向風力轉化為旋轉應力，傳導至兩側的混凝土錨座。</div>',
-            unsafe_allow_html=True)
-        st.markdown('**【保留疑問】**')
-        st.markdown(
-            '<div class="doubt-box">嘉義夏季常有強陣風，這種雙曲面的大受風面積，在設計上是如何透過模擬來計算其風致振動安全性？</div>',
-            unsafe_allow_html=True)
+        st.markdown('<div class="logic-box">單塔斜張橋，利用螺旋鋼樑與鋼纜系統將不對稱重力拉回主塔。</div>', unsafe_allow_html=True)
         st.write("---")
-        st.write("官方連結：[故宮南院 - 園區景觀](https://south.npm.gov.tw/Exhibition/Architecture)")
+        # 修正：故宮南院改用園區介紹穩定頁面
+        st.write("官方連結：[故宮南院 - 園區景觀導覽](https://south.npm.gov.tw/Explore/Architecture)")
