@@ -78,7 +78,7 @@ if category == "地標與超高層建築":
 
 # --- 類別二：表演藝術與文化空間 ---
 elif category == "表演藝術與文化空間":
-    tab1, tab2, tab3 = st.tabs(["東京巨蛋", "台中歌劇院", "台北表演藝術中心"])
+    tab1, tab2, tab3, tab4 = st.tabs(["東京巨蛋", "台中歌劇院", "台北表演藝術中心", "高雄流行音樂中心"])
 
     with tab1:
         st.markdown('<div class="section-header">日本東京巨蛋：漂浮的白色雲朵</div>', unsafe_allow_html=True)
@@ -134,6 +134,25 @@ elif category == "表演藝術與文化空間":
         st.markdown('**【保留疑問】**')
         st.markdown(
             '<div class="doubt-box">長期使用下，這種非對稱懸臂設計在銜接處的鋼材疲勞問題，是否會比一般對稱建築更難監測與維護？</div>',
+            unsafe_allow_html=True)
+        st.write("---")
+
+    with tab4:
+        st.markdown('<div class="section-header">高雄流行音樂中心：愛河灣畔的幾何浪潮</div>', unsafe_allow_html=True)
+        st.markdown('**【我的故事：滑到脆（Threads）上面的幾何奇觀】**')
+        st.markdown(
+            '<div class="story-text">最近在 Threads 上一直刷到高雄這座白色建築，空拍視角下那些六角形排列得密密麻麻，多到讓人有點「密集恐懼症」。網友們都在打卡說那是「海平面上的珊瑚礁」，但我越看越覺得不對勁，這種像積木一樣東拼西湊、角度怪異的蜂巢牆面，真的不是純粹為了拍照好看嗎？在海邊這種鹽分高、颱風強的地方，這些細碎的窗格接縫如果漏水或生鏽，裡面那堆精密音響器材不就毀了？</div>',
+            unsafe_allow_html=True)
+        st.markdown(
+            '<div class="question-text">❓ 設計提問：這種由大量非對稱六角形組組成之「蜂巢網格」，在力學上如何確保受力均勻，而不是只是一層空有其表的幾何外殼？</div>',
+            unsafe_allow_html=True)
+        st.markdown('**【理性求證】**')
+        st.markdown(
+            '<div class="logic-box">1. <b>空間網格 (Space Frame) 的力學分配</b>：它並非傳統的樑柱結構，而是將受力分散到數以千計的鋼管節點上。即便某個局部受壓，網格會像蜘蛛網一樣將力量導向四周。<br>2. <b>數位參數化建模</b>：每個六角形的尺寸其實都經過精密計算，透過數位模擬確保外殼在承受強大風壓時，整體位移量能控制在安全範圍內。</div>',
+            unsafe_allow_html=True)
+        st.markdown('**【保留疑問】**')
+        st.markdown(
+            '<div class="doubt-box">雖然網格很強，但每個窗格的矽利康（Silicone）封膠長度加起來驚人，在高雄烈日曝曬下，材料老化的速度是否會導致未來出現毀滅性的滲漏問題？</div>',
             unsafe_allow_html=True)
         st.write("---")
 
