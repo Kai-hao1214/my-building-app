@@ -141,10 +141,10 @@ elif category == "表演藝術與文化空間":
         st.markdown('<div class="section-header">高雄流行音樂中心：愛河灣畔的幾何浪潮</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事：滑到脆（Threads）上面的幾何奇觀】**')
         st.markdown(
-            '<div class="story-text">最近在 Threads 上一直刷到高雄這座白色建築，空拍視角下那些六角形排列得密密麻麻，多到讓人有點「密集恐懼症」。網友們都在打卡說那是「海平面上的珊瑚礁」，但我越看越覺得不對勁，這種像積木一樣東拼西湊、角度怪異的蜂巢牆面，真的不是純粹為了拍照好看嗎？在海邊這種鹽分高、颱風強的地方，這些細碎的窗格接縫如果漏水或生鏽，裡面那堆精密音響器材不就毀了？</div>',
+            '<div class="story-text">最近在 Threads 上一直刷到高雄這座白色建築，空拍視角下那些六角形排列得密密麻麻，多到讓人有點「密集恐懼症」。網友們都在打卡說那是「海平面上的珊瑚礁」，但我越看越覺得不對勁，這種積木一樣東拼西湊、角度怪異的蜂巢牆面，真的不是純粹為了拍照好看嗎？在海邊這種鹽分高、颱風強的地方，這些細碎的窗格接縫如果漏水或生鏽，裡面那堆精密音響器材不就毀了？</div>',
             unsafe_allow_html=True)
         st.markdown(
-            '<div class="question-text">❓ 設計提問：這種由大量非對稱六角形組組成之「蜂巢網格」，在力學上如何確保受力均勻，而不是只是一層空有其表的幾何外殼？</div>',
+            '<div class="question-text">❓ 設計提問：這種由大量非對稱六角形組成之「蜂巢網格」，在力學上如何確保受力均勻，而不是只是一層空有其表的幾何外殼？</div>',
             unsafe_allow_html=True)
         st.markdown('**【理性求證】**')
         st.markdown(
@@ -158,7 +158,7 @@ elif category == "表演藝術與文化空間":
 
 # --- 類別三：歷史與地景構造 ---
 elif category == "歷史與地景構造":
-    tab1, tab2, tab3 = st.tabs(["嘉義美術館", "龍騰斷橋", "故宮南院"])
+    tab1, tab2, tab3, tab4 = st.tabs(["嘉義美術館", "龍騰斷橋", "故宮南院", "西螺大橋"])
 
     with tab1:
         st.markdown('<div class="section-header">嘉義美術館：古蹟與 CLT 的時空交疊</div>', unsafe_allow_html=True)
@@ -220,5 +220,24 @@ elif category == "歷史與地景構造":
         st.markdown('**【保留疑問】**')
         st.markdown(
             '<div class="doubt-box">嘉義夏季常有強陣風，這種雙曲面的大受風面積，在設計上是如何透過模擬來計算其風致振動安全性？</div>',
+            unsafe_allow_html=True)
+        st.write("---")
+
+    with tab4:
+        st.markdown('<div class="section-header">西螺大橋：濁水溪上的紅色脊樑</div>', unsafe_allow_html=True)
+        st.markdown('**【我的故事：那年環島的踏板記憶】**')
+        st.markdown(
+            '<div class="story-text">還記得那年大學環島，我騎著腳踏車來到雲林與彰化的交界。當這座鮮紅色的巨獸出現在濁水溪上方時，那種視覺壓迫感真的很強。我騎在狹窄的車道裡，旁邊是一格格重複出現的三角形鋼架，聽著輪胎壓過橋面的聲音，感覺自己像是穿梭在某種工業時代的時光隧道。我當時就在想，這座橋這麼長（將近兩公里！），在那個連電腦計算都沒有的年代，是怎麼確保這麼多鋼鐵拼出來的桁架，在滾滾濁水溪上站得這麼穩？</div>',
+            unsafe_allow_html=True)
+        st.markdown(
+            '<div class="question-text">❓ 設計提問：長度近兩公里的西螺大橋，如何利用三角形桁架（Truss）的剛性，在跨越寬闊且土質鬆軟的濁水溪河床時維持結構穩定？</div>',
+            unsafe_allow_html=True)
+        st.markdown('**【理性求證】**')
+        st.markdown(
+            '<div class="logic-box">1. <b>華倫式桁架 (Warren Truss)</b>：橋身利用無數個三角形組成，利用幾何學中最穩定的形狀，將活載重（車輛）與靜載重（鋼材自重）均勻導向橋墩。<br>2. <b>多孔跨接設計</b>：全橋由 31 個鋼橋孔組成，每個橋孔都是獨立的力學單元，這種設計能有效分散河水沖刷對單一橋墩的負擔。</div>',
+            unsafe_allow_html=True)
+        st.markdown('**【保留疑問】**')
+        st.markdown(
+            '<div class="doubt-box">這座橋使用了大量的鋼性鉚釘連接。經過一甲子的風雨侵蝕與車輛頻繁震動，這些關鍵連結點的疲勞損傷要如何進行非破壞性的精準檢測？</div>',
             unsafe_allow_html=True)
         st.write("---")
