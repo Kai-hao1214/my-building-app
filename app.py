@@ -122,7 +122,7 @@ elif category == "表演藝術與文化空間":
         st.markdown('<div class="section-header">台北表演藝術中心：橫向生長的幾何</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事】**')
         st.markdown(
-            '<div class="story-text">身為嘉義人，這座建築在新聞上的討論度極高，但我更在意的是那種視覺上的突變感。巨大的銀色圓球像是從方體中突然長出來一樣。這種違反直覺的生長方式，讓我懷疑它在地震頻繁的台灣是否真的站得住腳？</div>',
+            '<div class="story-text">這座建築在新聞上的討論度極高，但我更在意的是那種視覺上的突變感。巨大的銀色圓球像是從方體中突然長出來一樣。這種違反直覺的生長方式，讓我懷疑它在地震頻繁的台灣是否真的站得住腳？</div>',
             unsafe_allow_html=True)
         st.markdown(
             '<div class="question-text">❓ 設計提問：當巨型圓球從主建築橫向延伸，銜接處如何化解應力集中與扭轉破壞？</div>',
