@@ -122,7 +122,7 @@ elif category == "表演藝術與文化空間":
         st.markdown('<div class="section-header">台北表演藝術中心：橫向生長的幾何</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事】**')
         st.markdown(
-            '<div class="story-text">這座建築在新聞上的討論度極高，但我更在意的是那種視覺上的突變感。巨大的銀色圓球像是從方體中突然長出來一樣。這種違反直覺的生長方式，讓我懷疑它在地震頻繁的台灣是否真的站得住腳？</div>',
+            '<div class="story-text">身為嘉義人，這座建築在新聞上的討論度極高，但我更在意的是那種視覺上的突變感。巨大的銀色圓球像是從方體中突然長出來一樣。這種違反直覺的生長方式，讓我懷疑它在地震頻繁的台灣是否真的站得住腳？</div>',
             unsafe_allow_html=True)
         st.markdown(
             '<div class="question-text">❓ 設計提問：當巨型圓球從主建築橫向延伸，銜接處如何化解應力集中與扭轉破壞？</div>',
@@ -146,10 +146,9 @@ elif category == "表演藝術與文化空間":
         st.markdown(
             '<div class="question-text">❓ 設計提問：這種由大量非對稱六角形組成之「蜂巢網格」，在力學上如何確保受力均勻，而不是只是一層空有其表的幾何外殼？</div>',
             unsafe_allow_html=True)
-        st.markdown('**【理性求證】**')
-        st.markdown(
-            '<div class="logic-box">1. <b>空間網格 (Space Frame) 的力學分配</b>：它並非傳統的樑柱結構，而是將受力分散到數以千計的鋼管節點上。即便某個局部受壓，網格會像蜘蛛網一樣將力量導向四周。<br>2. <b>數位參數化建模</b>：每個六角形的尺寸其實都經過精密計算，透過數位模擬確保外殼在承受強大風壓時，整體位移量能控制在安全範圍內。</div>',
-            unsafe_allow_html=True)
+        st.markdown('**【理性求證：空間網格與參數建模】**')
+        st.markdown('<div class="logic-box">1. <b>空間網格 (Space Frame)</b>：它將受力分散到數以千計的鋼管節點上。即便某個局部受壓，網格會像蜘蛛網一樣將力量導向四周。<br>2. <b>數位參數化建模</b>：每個六角形的尺寸都經過精密計算，透過數位模擬確保外殼在承受強大風壓時，整體位移量能控制在安全範圍內。</div>',
+                    unsafe_allow_html=True)
         st.markdown('**【保留疑問】**')
         st.markdown(
             '<div class="doubt-box">雖然網格很強，但每個窗格的矽利康（Silicone）封膠長度加起來驚人，在高雄烈日曝曬下，材料老化的速度是否會導致未來出現毀滅性的滲漏問題？</div>',
@@ -158,7 +157,7 @@ elif category == "表演藝術與文化空間":
 
 # --- 類別三：歷史與地景構造 ---
 elif category == "歷史與地景構造":
-    tab1, tab2, tab3, tab4 = st.tabs(["嘉義美術館", "龍騰斷橋", "故宮南院", "西螺大橋"])
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["嘉義美術館", "龍騰斷橋", "故宮南院", "西螺大橋", "澎湖跨海大橋"])
 
     with tab1:
         st.markdown('<div class="section-header">嘉義美術館：古蹟與 CLT 的時空交疊</div>', unsafe_allow_html=True)
@@ -174,14 +173,14 @@ elif category == "歷史與地景構造":
         st.markdown('**【理性求證：新舊構造的融合與分離】**')
         st.markdown('<div class="logic-box">'
                     '這座建築的魅力來自於精準的補強與新舊脫離的策略：<br><br>'
-                    '1. <b>CLT 集成材</b>：增建區採用輕質高強度的多層次鋼性集成材外牆，減輕老舊地基負擔，並呼應木都歷史。<br>'
-                    '2. <b>三叉型集成材木柱</b>：在大廳內部支撐挑高屋頂，有效分擔垂直荷重與水平力，創造大面積無柱視野。<br>'
-                    '3. <b>結構脫離設計</b>：古蹟棟與新大廳在力學上完全獨立，設有抗震縫避免受震時因晃動頻率不同而碰撞。</div>',
+                    '1. <b>CLT 集成材</b>：增建區採用輕質高強度的多層次鋼性集成材外牆，減輕老舊地基負擔。<br>'
+                    '2. <b>三叉型集成材木柱</b>：在大廳內部支撐挑高屋頂，有效分擔荷重與水平力。<br>'
+                    '3. <b>結構脫離設計</b>：古蹟棟與新大廳在力學上獨立，設有抗震縫避免受震時碰撞。</div>',
                     unsafe_allow_html=True)
 
         st.markdown('**【保留疑問】**')
         st.markdown(
-            '<div class="doubt-box">在台灣潮濕多雨環境下，木構造與玻璃帷幕交接處的防水密封，以及長期的防腐維護，對古蹟保存單位而言是否會是挑戰？</div>',
+            '<div class="doubt-box">在台灣潮濕多雨環境下，木構造與玻璃帷幕交點的防水密封，對古蹟保存單位而言是否會是長期挑戰？</div>',
             unsafe_allow_html=True)
         st.write("---")
 
@@ -227,17 +226,34 @@ elif category == "歷史與地景構造":
         st.markdown('<div class="section-header">西螺大橋：濁水溪上的紅色脊樑</div>', unsafe_allow_html=True)
         st.markdown('**【我的故事：那年環島的踏板記憶】**')
         st.markdown(
-            '<div class="story-text">還記得那年大學環島，我騎著腳踏車來到雲林與彰化的交界。當這座鮮紅色的巨獸出現在濁水溪上方時，那種視覺壓迫感真的很強。我騎在狹窄的車道裡，旁邊是一格格重複出現的三角形鋼架，聽著輪胎壓過橋面的聲音，感覺自己像是穿梭在某種工業時代的時光隧道。我當時就在想，這座橋這麼長（將近兩公里！），在那個連電腦計算都沒有的年代，是怎麼確保這麼多鋼鐵拼出來的桁架，在滾滾濁水溪上站得這麼穩？</div>',
+            '<div class="story-text">還記得那年大學環島，我騎著腳踏車來到雲林與彰化的交界。當這座鮮紅色的巨獸出現在濁水溪上方時，那種視覺壓迫感真的很強。我騎在狹窄的車道裡，旁邊是一格格重複出現的三角形鋼架，感覺自己像是穿梭在某種工業時代的時光隧道。我當時就在想，這座橋這麼長，在那個連電腦計算都沒有的年代，是怎麼確保這麼多鋼鐵拼出的桁架，能站得這麼穩？</div>',
             unsafe_allow_html=True)
         st.markdown(
-            '<div class="question-text">❓ 設計提問：長度近兩公里的西螺大橋，如何利用三角形桁架（Truss）的剛性，在跨越寬闊且土質鬆軟的濁水溪河床時維持結構穩定？</div>',
+            '<div class="question-text">❓ 設計提問：長度近兩公里的西螺大橋，如何利用三角形桁架的剛性，在寬闊且土質鬆軟的河床維持結構穩定？</div>',
             unsafe_allow_html=True)
-        st.markdown('**【理性求證】**')
-        st.markdown(
-            '<div class="logic-box">1. <b>華倫式桁架 (Warren Truss)</b>：橋身利用無數個三角形組成，利用幾何學中最穩定的形狀，將活載重（車輛）與靜載重（鋼材自重）均勻導向橋墩。<br>2. <b>多孔跨接設計</b>：全橋由 31 個鋼橋孔組成，每個橋孔都是獨立的力學單元，這種設計能有效分散河水沖刷對單一橋墩的負擔。</div>',
-            unsafe_allow_html=True)
+        st.markdown('**【理性求證：華倫式桁架與多孔跨接】**')
+        st.markdown('<div class="logic-box">1. <b>華倫式桁架 (Warren Truss)</b>：利用幾何學中最穩定的三角形組成，將荷重均勻導向橋墩。<br>2. <b>多孔跨接設計</b>：全橋由 31 個獨立鋼橋孔組成，有效分散河水沖刷對單一橋墩的負擔。</div>',
+                    unsafe_allow_html=True)
         st.markdown('**【保留疑問】**')
         st.markdown(
-            '<div class="doubt-box">這座橋使用了大量的鋼性鉚釘連接。經過一甲子的風雨侵蝕與車輛頻繁震動，這些關鍵連結點的疲勞損傷要如何進行非破壞性的精準檢測？</div>',
+            '<div class="doubt-box">這座橋使用了大量鋼性鉚釘連接。經過一甲子的風雨侵蝕，這些關鍵連結點的疲勞損傷要如何進行非破壞性的精準檢測？</div>',
+            unsafe_allow_html=True)
+        st.write("---")
+
+    with tab5:
+        st.markdown('<div class="section-header">澎湖跨海大橋：橋頭路口的風速震撼</div>', unsafe_allow_html=True)
+        st.markdown('**【我的故事：站在白色拱門下的敬畏】**')
+        st.markdown(
+            '<div class="story-text">去澎湖時，我站在跨海大橋起點的白色拱門前。雖然只是在路口觀賞，但看著那條看不見盡頭的橋樑橫跨海面，視覺衝擊極大。當時東北季風強勁，風聲大到刺耳。我心想，這座橋每天被強烈鹽水沖刷，還要承受世界級的風速，到底是用什麼材料做的？那些橋墩看起來並不粗壯，是如何在兇猛的海浪中站穩幾十年？</div>',
+            unsafe_allow_html=True)
+        st.markdown(
+            '<div class="question-text">❓ 設計提問：在極高鹽分與強烈潮流的嚴苛環境下，如何透過結構設計避免鋼筋鏽蝕，並維持長期的抗浪穩定性？</div>',
+            unsafe_allow_html=True)
+        st.markdown('**【理性求證：預力與流線型設計】**')
+        st.markdown('<div class="logic-box">1. <b>預力混凝土</b>：事先對混凝土施加壓力以抵銷海浪產生的拉力，有效減少裂縫，阻絕鹽分滲入鋼筋。<br>2. <b>流線型防護橋墩</b>：橋墩外型設計成流線型，主動降低強大海流造成的側向推力，讓水流順利通過以減輕負擔。</div>',
+                    unsafe_allow_html=True)
+        st.markdown('**【保留疑問】**')
+        st.markdown(
+            '<div class="doubt-box">在長期乾濕交替的鹽害環境下，結構內部的鋼索若發生肉眼看不見的鏽蝕，目前的監測技術是否有辦法在斷裂發生前精準偵測？</div>',
             unsafe_allow_html=True)
         st.write("---")
